@@ -16,16 +16,17 @@ Verslag over data-analyse van Reumatoide artritis
 
 ## Introductie
 
-Reumatoide Artritis is een vorm van gewricht ontsteking die verorzaakt wordt door [Auto-immuniteit](bronnen/managementofrheumatoidarth.pdf). Deze auto-immuun ziekte ontstaat in 0.24-1% van de populatie en komt 2 tot 3 keer meer voor in vrouwen dan bij [mannen](bronnen/epidoemiology and risk factors
-Heb je Harry Potter nooit gelezen? Moet je echt doen, [klik maar hier](bronnen/harry-potter.pdf).
+Reumatoide Artritis is een vorm van gewrichtsslijmvlies ontsteking die verorzaakt wordt door [Auto-immuniteit](bronnen/managementofrheumatoidarth.pdf). En wordt veroorzaakt door een combinatie van genetica en een auto-immuun reactie op, bijvoorbeeld lichaams eigen [eiwitten](glycosaminoglycans-are-a-potential.pdf). (sympotons-in-individuals-at-risk-of-rheuma.pdf) De symptonen van Reumatoide Artritis omvatten pijn in de aangetaste gewrichte en stijfheid in deze gewrichten na langdurig [stil zitten](https://www.ncbi.nlm.nih.gov/books/NBK441999/). Deze auto-immuun ziekte ontstaat in 0.24-1% van de populatie en komt 2 tot 3 keer meer voor in vrouwen dan bij [mannen](bronnen/epidoemiologyandriskfactorsforrheumatoid.pdf). Rheumatoide artritis is, zoals genoemd een relatief veel voorkomende afflictie. de hoofdvraag van dit onderzoek is daarom; Welke genen hebben een afwijkende expressie in patienten met rheumatoide artritis vergeleken met gezonde patienten? 
 
 ## Methoden
 
-De data is verstrekt door de Afdeling Magische Wetshandhaving en Ollivanders Wandwinkel Archieven. 
+Om de data te verwerken is gebruik gemaakt van verscheidenen packages in het [R script](code/script-transcriptionomics.R). 
+Voor het mappen van de reads is gebruik gemaakt van Rsubread. Het Rsubread package zoekt de locatie van bepaalde sequenties van het gesequencete DNA op het volledige genoom van, in dit geval de mens. 
+Na het mappen van de samples zijn de gemapte samples genormaliseert met DEseq2. Dit wordt gedaan om rekening te houden met de sequencing depth en kan de expressie beter worden vergeleken tussen samples.
 
-De ruwe data van spreuken is eerst bewerkt voor analyse met behulp van [code/script-transcriptionomics.R](code/script-transcriptionomics.R). Vervolgens zijn de spreuken geanalyseerd op kracht en nauwkeurigheid met [scripts/02_spell_analysis.R](scripts/02_spell_analysis.R).
 
-## 📊 Resultaten
+
+## Resultaten
 
 Om inzicht te krijgen in eigenschappen van de te gebruiken spreuken is er een overzicht gemaakt, te vinden in [deze tabel](resultaten/.csv). Onvergeeflijke vloeken zijn niet meegenomen in dit overzicht. 
 
