@@ -37,6 +37,7 @@ De data is verwerkt met Rsubread om een [countmatrix](data/count_matrix.txt) te 
 <p align="center">
   <img src="figuren/volcano%20plot.png" alt="Figuur 2: enhanced volcano plot met p-cutoff" width="600"/>
 </p>
+
 *Figuur 2: enhanced volcano plot met p-cutoff, de x-as geeft de foldchange aan en de punten die op be y-as boven 5 liggen zijn significant, aangegeven met een rode kleur.*
 
 In figuur 2 is de volcano plot weergegeven, in deze grafiek is te zien dat verscheidenen genen significant up of down regulated zijn. een opvallend voorbeeld hiervan is het ANKRD30BL, dit gen is erg significant downregulated in patienten.
@@ -55,7 +56,7 @@ De 10 meest significante genen zijn verwerkt in figuur 3, waarbij de "protein bi
 
 *Figuur 4: Pathway analyse van de upregulated pathways, de x-as geeft de significantie van de pathways in -log10 aan.*
 
-
+Figuur 4 en 5 geven de upregulated en downregulated pathways aan in de patienten.
 
 <p align="center">
   <img src="figuren/downregpathway.png" alt="Figuur 5: downregulated pathway" width="600"/>
