@@ -25,7 +25,7 @@ Voor het mappen van de reads is gebruik gemaakt van Rsubread. Het Rsubread packa
 Na het mappen van de samples zijn de gemapte samples genormaliseert met DEseq2. De data wordt genormaliseert om rekening te houden met de sequencing depth en kan door deze normalisering de expressie beter vergelijken tussen samples.
 Na het normaliseren van de samples kan de data worden gevisualiseert met de package EnhancedVolcano. Met deze package kan een grafiek worden gemaakt die de differentiele expressie van de samples weergeeft.
 Verder zijn de samples geanalyseert met goseq om een Go enrichment uit te voeren, Voor deze analyse wordt gebruik gemaakt van het menselijke HG38 genoom. De goenrichment laat genen zien in een grafiek die een verhoogde expressie hebben in de patienten samples.
-Om de pathway analyse te doen is gebruik gemaakt van de KEGG package, Deze package mapt de gesequencete DNA op bekende pathways om te kijken welke pathways mogelijk betrokken zijn bij reumatoide artritis.
+Om de pathway analyse te doen is gebruik gemaakt van de KEGGREST package, Deze package mapt de gesequencete DNA op bekende pathways om te kijken welke pathways mogelijk betrokken zijn bij reumatoide artritis.
 
 
 
@@ -37,7 +37,9 @@ De data is verwerkt met Rsubread om een [countmatrix](data/countmatrix.file) te 
 <p align="center">
   <img src="figuren/volcano%20plot.png" alt="Figuur 1: enhanced volcano plot met p-cutoff" width="600"/>
 </p>
-in figuur 1 is de volcano plot weergegeven
+*Figuur 2: enhanced volcano plot met p-cutoff, de x-as geeft de foldchange aan en de y-as laat de significantie zien.*
+
+In figuur 2 is de volcano plot weergegeven, in de grafiek zijn de rode punten significante metingen
 
 
 ## Conclusie
