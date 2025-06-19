@@ -23,6 +23,8 @@ Reumatoide Artritis is een vorm van gewrichtsslijmvlies ontsteking die verorzaak
 Om de data te verwerken is gebruik gemaakt van verscheidenen packages in het [R script](code/script-transcriptionomics.R). 
 Voor het mappen van de reads is gebruik gemaakt van Rsubread. Het Rsubread package zoekt de locatie van bepaalde sequenties van het gesequencete DNA op het volledige genoom van, in dit geval de mens. 
 Na het mappen van de samples zijn de gemapte samples genormaliseert met DEseq2. Dit wordt gedaan om rekening te houden met de sequencing depth en kan de expressie beter worden vergeleken tussen samples.
+Na het normaliseren van de samples kan de data worden gevisualiseert met de package EnhancedVolcano. Met deze package kan een grafiek worden gemaakt die de differentiele expressie van de samples weergeeft.
+
 
 
 
