@@ -35,11 +35,16 @@ Om de overexpressie van genen in de patienten te analyseren is gebruik gemaakt v
 De data is verwerkt met Rsubread om een [countmatrix](data/count_matrix.txt) te maken met de bam en bambai [files](data/bambambai/).
 
 <p align="center">
-  <img src="figuren/volcano%20plot.png" alt="Figuur 1: enhanced volcano plot met p-cutoff" width="600"/>
+  <img src="figuren/volcano%20plot.png" alt="Figuur 2: enhanced volcano plot met p-cutoff" width="600"/>
 </p>
-*Figuur 2: enhanced volcano plot met p-cutoff, de x-as geeft de foldchange aan en de y-as laat de significantie zien.*
+*Figuur 2: enhanced volcano plot met p-cutoff, de x-as geeft de foldchange aan en de punten die op be y-as boven 5 liggen zijn significant, aangegeven met een rode kleur.*
 
-In figuur 2 is de volcano plot weergegeven, in de grafiek zijn de rode punten significante metingen
+In figuur 2 is de volcano plot weergegeven, in deze grafiek is te zien dat verscheidenen genen significant up of down regulated zijn. een opvallend voorbeeld hiervan is het ANKRD30BL, dit gen is erg significant downregulated in patienten.
+
+<p align="center">
+  <img src="figuren/Goenrichment.png" alt="Figuur 3: GOenrichment" width="600"/>
+</p>
+*Figuur 2: GOenrichment grafiek van de patienten. De x-as geeft de significantie*
 
 
 ## Conclusie
