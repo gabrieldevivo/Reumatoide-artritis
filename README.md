@@ -37,7 +37,7 @@ De data is verwerkt met Rsubread om een [countmatrix](data/countmatrix.file) te 
 <p align="center">
   <img src="figuren/volcano%20plot.png" alt="Figuur 1: enhanced volcano plot met p-cutoff" width="600"/>
 </p>
-
+in figuur 1 is de volcano plot weergegeven
 
 
 ## Conclusie
