@@ -1,6 +1,7 @@
-# Reumatoide-artritis
+# Reumatoide-artritis-BM2C
 Verslag over data-analyse van Reumatoide artritis
-
+Autheur: Gabriel de Vivo
+klas: BM2C
 
 ## 📁 Inhoud/structuur
 - `data/ruw/` - de orginele dataset
@@ -37,7 +38,7 @@ De data is verwerkt met Rsubread om een [countmatrix](data/count_matrix.txt) te 
   <img src="figuren/volcano%20plot.png" alt="Figuur 2: enhanced volcano plot met p-cutoff" width="600"/>
 </p>
 
-*Figuur 2: enhanced volcano plot met p-cutoff, de x-as geeft de foldchange aan en de punten die op be y-as boven 5 liggen zijn significant, aangegeven met een rode kleur.*
+*Figuur 2: enhanced volcano plot met p-cutoff, de x-as geeft de foldchange aan en de punten die op be y-as boven 5 liggen zijn significant, aangegeven met een rode kleur. de grijs gekleurde bolletjes verschillen niet significant van de patienten.*
 
 In figuur 2 is de volcano plot weergegeven, in deze grafiek is te zien dat verscheidenen genen significant up of down regulated zijn. een opvallend voorbeeld hiervan is het ANKRD30BL, dit gen is erg significant downregulated in patienten.
 
