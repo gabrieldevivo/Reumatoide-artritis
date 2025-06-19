@@ -55,7 +55,7 @@ De 10 meest significante genen zijn verwerkt in figuur 3, waarbij de "protein bi
 
 *Figuur 4: Pathway analyse van de upregulated pathways, de x-as geeft de significantie van de pathways in -log10 aan.*
 
-Figuur 4 en 5 geven de upregulated en downregulated pathways aan in de patienten.
+Figuur 4 en 5 geven de 10 hoogste upregulated en downregulated pathways aan in de patienten. 
 
 <p align="center">
   <img src="figuren/downregpathway.png" alt="Figuur 5: downregulated pathway" width="600"/>
