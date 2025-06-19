@@ -4,8 +4,8 @@ Verslag over data-analyse van Reumatoide artritis
 
 ## 📁 Inhoud/structuur
 
-- `data/raw/` – de data verkregen van het originele artiekel.  
-- `data/processed/` - verwerkte datasets gegenereerd met scripts 
+- `data/` – de verwerkte data die is gebruikt.  
+- `data/bambambai/` - bam en bambai files die zijn gemaakt
 - `code/` – gebruikte code om de gekregen data te verwerken
 - `figuren/` - grafieken en tabellen
 - `bronnen/` - gebruikte bronnen 
@@ -32,7 +32,7 @@ Om de pathway analyse te doen is gebruik gemaakt van de KEGGREST package, Deze p
 ## Resultaten
 
 Om de overexpressie van genen in de patienten te analyseren is gebruik gemaakt van verscheidenen packages in R.
-De data is verwerkt met Rsubread om een [countmatrix](data/countmatrix.file) te maken.
+De data is verwerkt met Rsubread om een [countmatrix](data/count_matrix.txt) te maken.
 
 <p align="center">
   <img src="figuren/volcano%20plot.png" alt="Figuur 1: enhanced volcano plot met p-cutoff" width="600"/>
