@@ -3,14 +3,13 @@ Verslag over data-analyse van Reumatoide artritis
 
 
 ## 📁 Inhoud/structuur
-
+- `data/ruw/` - de orginele dataset
 - `data/` – de verwerkte data die is gebruikt.  
 - `data/bambambai/` - bam en bambai files die zijn gemaakt
 - `code/` – gebruikte code om de gekregen data te verwerken
 - `figuren/` - grafieken en tabellen
 - `bronnen/` - gebruikte bronnen 
 - `README.md` - het verslag
-- `assets/` - overige documenten voor de opmaak van deze pagina
 
 ---
 
