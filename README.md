@@ -31,9 +31,12 @@ Om de pathway analyse te doen is gebruik gemaakt van de KEGG package, Deze packa
 
 ## Resultaten
 
-Om inzicht te krijgen in eigenschappen van de te gebruiken spreuken is er een overzicht gemaakt, te vinden in [deze tabel](resultaten/.csv). Onvergeeflijke vloeken zijn niet meegenomen in dit overzicht. 
+Om de overexpressie van genen in de patienten te analyseren is gebruik gemaakt van verscheidenen packages in R.
+De data is verwerkt met Rsubread om een [countmatrix](data/countmatrix.file) te maken.
 
-Om een afweging te maken welke spreuken het meest effectief zijn, is er onderzocht of er een verband te vinden is tussen kracht en accuraatheid. In [het resultaat hiervan](resultaten/spell_power_vs_accuracy.png) is te zien dat er een negatieve daling lijkt te zijn in kracht als de accuraatheid toeneemt. Een uitschieter is de onvergeeflijke vloek *Avada Kedavra*, met zowel hoge kracht als accuraatheid. 
+
+
+
 
 ## Conclusie
 
