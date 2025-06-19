@@ -35,7 +35,7 @@ Om de overexpressie van genen in de patienten te analyseren is gebruik gemaakt v
 De data is verwerkt met Rsubread om een [countmatrix](data/countmatrix.file) te maken.
 
 <p align="center">
-  <img src="figuren/volcano%20plot.png.png" alt="Figuur 1: enhanced volcano plot met p-cutoff" width="600"/>
+  <img src="figuren/volcano%20plot.png" alt="Figuur 1: enhanced volcano plot met p-cutoff" width="600"/>
 </p>
 
 
