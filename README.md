@@ -32,7 +32,7 @@ Om de pathway analyse te doen is gebruik gemaakt van de KEGGREST package, Deze p
 ## Resultaten
 
 Om de overexpressie van genen in de patienten te analyseren is gebruik gemaakt van verscheidenen packages in R.
-De data is verwerkt met Rsubread om een [countmatrix](data/count_matrix.txt) te maken.
+De data is verwerkt met Rsubread om een [countmatrix](data/count_matrix.txt) te maken met de bam en bambai [files](data/bambambai/).
 
 <p align="center">
   <img src="figuren/volcano%20plot.png" alt="Figuur 1: enhanced volcano plot met p-cutoff" width="600"/>
