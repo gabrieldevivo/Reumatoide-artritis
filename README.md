@@ -34,7 +34,9 @@ Om de pathway analyse te doen is gebruik gemaakt van de KEGG package, Deze packa
 Om de overexpressie van genen in de patienten te analyseren is gebruik gemaakt van verscheidenen packages in R.
 De data is verwerkt met Rsubread om een [countmatrix](data/countmatrix.file) te maken.
 
-
+<p align="center">
+  <img src="figuren/volcano%20plot.png.png" alt="Figuur 1: enhanced volcano plot met p-cutoff" width="600"/>
+</p>
 
 
 
