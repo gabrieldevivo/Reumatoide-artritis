@@ -54,19 +54,12 @@ counts <- count_matrix$counts
 colnames(counts) <- c("patient1", "patient2", "patient3", "patient4", "cont1", "cont2", "cont3", "cont4")
 write.csv(counts, "gabrielmatrixdata.csv")
 install.packages("KEGGREST")
-install.packages"Rtools"
+install.packages("Rtools")
 BiocManager::install('DESeq2')
 library(DESeq2)
 library(KEGGREST)
 
-counts <- read.table("count_matrix.txt")
-treatment <- c("patient", "patient", "patient", "patient", "control", "control", "control", "control")
-treatment_table <- data.frame(treatment)
-rownames(treatment_table) <- c("patient1", "patient2", "patient3", "patient4", "cont1", "cont2", "cont3", "cont4")
 
-dds <- DESeqDataSetFromMatrix(countData = round(counts),
-                                    colData = treatment_table,
-                                    design = ~ treatment)
 counts <- read.table("count_matrix.txt")
 treatment <- c("patient", "patient", "patient", "patient", "control", "control", "control", "control")
 treatment_table <- data.frame(treatment)
@@ -93,8 +86,8 @@ hoogste_fold_change <- resultaten[order(resultaten$log2FoldChange, decreasing = 
 laagste_fold_change <- resultaten[order(resultaten$log2FoldChange, decreasing = FALSE), ]
 
 laagste_p_waarde <- resultaten[order(resultaten$padj, decreasing = FALSE), ]
-if (!requireNamespace("EnhancedVolcano", quietly = TRUE)) {
- BiocManager::install("EnhancedVolcano")
+if (!requireNamespace("EnhancedVolcano", quietly = TRUE)) 
+  BiocManager::install("EnhancedVolcano") 
 
 library(EnhancedVolcano)
 EnhancedVolcano(resultaten,
@@ -190,3 +183,109 @@ ggplot(top_terms, aes(x = term, y = -log10(over_represented_pvalue))) +
     y = "-log10(p-waarde)"
   ) +
   theme_minimal(base_size = 12)
+#installeer de package
+BiocManager::install("limma")
+BiocManager::install("edgeR")
+BiocManager::install("msigdbr")   
+
+
+library(limma)
+library(edgeR)
+library(msigdbr)
+library(DESeq2)
+library(KEGGREST)
+library(ggplot2)
+library(dplyr)
+
+
+countstest <- read.table("count_matrix.txt")
+
+treatment <- c("control", "control", "control", "control", "RA", "RA", "RA", "RA")
+treatment_table <- data.frame(treatment)
+rownames(treatment_table) <- c("SRR4785819", "SRR4785820", "SRR4785828", "SRR4785831", "SRR4785979", "SRR4785980", "SRR4785986", "SRR4785988")
+
+
+dds <- DESeqDataSetFromMatrix(countData = round(countstest),
+                              colData = treatment_table,
+                              design = ~ treatment)
+
+
+dds <- DESeq(dds)
+resultaten <- results(dds)
+
+msig_go_bp <- msigdbr(species = "Homo sapiens", collection = "C5", subcollection = "BP")
+
+gene_sets <- split(msig_go_bp$gene_symbol, msig_go_bp$gs_name)
+
+
+dge <- DGEList(counts = counts(dds), genes = rownames(dds))
+
+
+dge <- calcNormFactors(dge)
+
+
+group <- dds$treatment  
+design <- model.matrix(~ group)
+
+
+v <- voom(dge, design, plot = TRUE)
+
+
+camera_results <- camera(v$E, index = gene_sets, design = design, contrast = 2)
+
+head(camera_results[order(camera_results$PValue), ])
+
+
+camera_sig <- camera_results[camera_results$PValue < 0.05, ]
+
+
+write.csv(camera_sig, "pathway_enrichment_MF.csv")
+
+
+top_terms <- head(camera_sig[order(camera_sig$PValue), ], 10)
+
+top_terms$gs_name <- rownames(top_terms)
+
+
+top_terms$Direction_num <- ifelse(top_terms$Direction == "Up", 1, -1)
+
+
+MF <- ggplot(top_terms, aes(x = reorder(gs_name, -Direction_num * log10(PValue)),
+                            y = -log10(PValue),
+                            fill = Direction)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(x = "Genenset (GO term)",
+       y = "-log10(p-waarde)",
+       title = "GO-GP (opgereguleerd)") +
+  theme_minimal() + scale_fill_manual(values = c("steelblue2")) 
+MF
+
+
+camera_down <- camera_sig %>% 
+  filter(Direction == "Down")
+
+top_terms <- head(camera_down[order(camera_down$PValue), ], 10)
+
+
+top_terms$gs_name <- rownames(top_terms)
+
+
+top_terms$Direction_num <- 1  
+
+
+MFD <- ggplot(top_terms, aes(
+  x = reorder(gs_name, -Direction_num * log10(PValue)),
+  y = -log10(PValue),
+  fill = Direction)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(
+    x = "Genenset (GO term)",
+    y = "-log10(p-waarde)",
+    title = "GO-BP (Downregulated)") +
+  theme_minimal() + scale_fill_manual(values = c("red3")) 
+
+
+MFD
+
