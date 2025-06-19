@@ -46,6 +46,8 @@ In figuur 2 is de volcano plot weergegeven, in deze grafiek is te zien dat versc
 </p>
 *Figuur 2: GOenrichment grafiek van de patienten. De x-as geeft de significantie*
 
+De 10 meest significante genen zijn verwerkt in figuur 3, waarbij de "protein binding" het meest significant was. De overige significante genen zien [hier](data/GO_enrichment_significant.csv) te vinden.
+
 
 ## Conclusie
 
