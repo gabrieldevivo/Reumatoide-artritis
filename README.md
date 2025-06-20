@@ -14,9 +14,9 @@ klas: BM2C
 
 ---
 
-## Introductie
+## Inleiding
 
-Reumatoide Artritis is een vorm van gewrichtsslijmvlies ontsteking waarbij het immuun systeem lichaamseigen weefsels aantast in de gewrichten[(Andrei-Flavius Radu, 2021)](bronnen/cells-10-02857-v2.pdf). Deze auto-immuun ziekte ontstaat in 0.24-1% van de populatie en komt 2 tot 3 keer meer voor in vrouwen dan bij mannen[(Venetsanpoulou et al, 2023)](bronnen/cells-10-02857-v2.pdf). De symptonen van Reumatoide Artritis omvatten pijn in de aangetaste gewrichte en stijfheid in deze gewrichten na langdurig stil zitten[(Jutley et al, 2017)](bronnen/1-s2.0-S1521694217300335-main.pdf). Reumatoide artritis wordt veroorzaakt door een combinatie van genetica en een auto-immuun reactie op, bijvoorbeeld lichaams eigen eiwitten[(Wang et al, 2004)](bronnen/roehrl-wang-glycosaminoglycans-are-a-potential-cause-of-rheumatoid-arthritis.pdf). Omdat er bekende indicatoren zijn voor het ontstaan van reumatoide artritis, zoals reumatoide factor[(Jutley et al, 2017)](bronnen/1-s2.0-S1521694217300335-main.pdf). Daarom is het van groot interesse om ook te kijken naar genetische indicatoren van reumatoide artritis, een bekende genetische indicator van reumatoide artritis is HLA-DRB1[(Laura E. Dedmon, 2020)](bronnen/keaa232.pdf). Omdat er al genen genetische indicatoren zijn gevonden is het van interesse om meer genen te vinden, de hoofdvraag van dit onderzoek is daarom; Welke genen hebben een afwijkende expressie in patienten met rheumatoide artritis vergeleken met gezonde patienten? 
+Reumatoide Artritis is een vorm van gewrichtsslijmvlies ontsteking waarbij het immuun systeem lichaamseigen weefsels aantast in de gewrichten[(Andrei-Flavius Radu, 2021)](bronnen/cells-10-02857-v2.pdf). Deze auto-immuun ziekte ontstaat in 0.24-1% van de populatie en komt 2 tot 3 keer meer voor in vrouwen dan bij mannen[(Venetsanpoulou et al, 2023)](bronnen/cells-10-02857-v2.pdf). De symptonen van Reumatoide Artritis omvatten pijn in de aangetaste gewrichte en stijfheid in deze gewrichten na langdurig stil zitten[(Jutley et al, 2017)](bronnen/1-s2.0-S1521694217300335-main.pdf). Reumatoide artritis wordt veroorzaakt door een combinatie van genetica en een auto-immuun reactie op, bijvoorbeeld lichaams eigen eiwitten[(Wang et al, 2004)](bronnen/roehrl-wang-glycosaminoglycans-are-a-potential-cause-of-rheumatoid-arthritis.pdf). Omdat er bekende indicatoren zijn voor het ontstaan van reumatoide artritis, zoals reumatoide factor[(Jutley et al, 2017)](bronnen/1-s2.0-S1521694217300335-main.pdf). Daarom is het van groot interesse om ook te kijken naar genetische indicatoren van reumatoide artritis, een bekende genetische indicator van reumatoide artritis is HLA-DRB1[(Laura E. Dedmon, 2020)](bronnen/keaa232.pdf). Omdat er al genen genetische indicatoren zijn gevonden is het van interesse om meer genen te vinden, de hoofdvraag van dit onderzoek is daarom; Welke genen en pathways hebben een afwijkende expressie in patienten met rheumatoide artritis vergeleken met gezonde patienten? 
 
 ## Methoden
 
@@ -27,7 +27,11 @@ Na het normaliseren van de samples kan de data worden gevisualiseert met de pack
 Verder zijn de samples geanalyseert met goseq om een Go enrichment uit te voeren, Voor deze analyse wordt gebruik gemaakt van het menselijke HG38 genoom. De goenrichment laat genen zien in een grafiek die een verhoogde expressie hebben in de patienten samples.
 Om de pathway analyse te doen is gebruik gemaakt van de KEGGREST versie 1.48.0[(hier een referentie)](wow.pdf) package, Deze package mapt de gesequencete DNA op bekende pathways om te kijken welke pathways mogelijk betrokken zijn bij reumatoide artritis.
 
+<p align="center">
+  <img src="figuren/volcano%20plot.png" alt="Figuur 1: flowchart" width="600"/>
+</p>
 
+*Figuur 1: Flowchart van de data verwerking in R.*
 
 ## Resultaten
 
@@ -64,8 +68,11 @@ Figuur 4 en 5 geven de 10 hoogste upregulated en downregulated pathways aan in d
 
 *Figuur 5: Pathway analyse van de down regulated pathways, de x-as geeft de significantie van de pathways in -log10 aan.*
 
+Die ene tabel met genen+ referentie
 
 ## Conclusie
+Om afwijkende expressie van genen en pathways te vinden in patienten met reumatoide artritis is een data analyse uitgevoerd in R. 
 
+De enhanced 
 
 
