@@ -73,6 +73,6 @@ Die ene tabel met genen+ referentie
 ## Conclusie
 Om afwijkende expressie van genen en pathways te vinden in patienten met reumatoide artritis is een data analyse uitgevoerd in R. 
 
-De enhanced 
+De Enhancedvolcano plot laat zien dat er veel genen significant verschillende tot expressie komt in de patienten samples, het ANKRD30BL gen is  
 
 
