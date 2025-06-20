@@ -28,7 +28,7 @@ Verder zijn de samples geanalyseert met goseq om een Go enrichment uit te voeren
 Om de pathway analyse te doen is gebruik gemaakt van de KEGGREST versie 1.48.0[(hier een referentie)](wow.pdf) package, Deze package mapt de gesequencete DNA op bekende pathways om te kijken welke pathways mogelijk betrokken zijn bij reumatoide artritis.
 
 <p align="center">
-  <img src="figuren/volcano%20plot.png" alt="Figuur 1: flowchart" width="600"/>
+  <img src="figuren/Screenshot%202025-06-21%20013136.png" alt="Figuur 1: flowchart" width="600"/>
 </p>
 
 *Figuur 1: Flowchart van de data verwerking in R.*
