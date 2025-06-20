@@ -23,9 +23,9 @@ Reumatoide Artritis is een vorm van gewrichtsslijmvlies ontsteking waarbij het i
 Om de ruwe [data](data/ruw/) te verwerken is gebruik gemaakt van verscheidenen packages in het [R script](code/script-transcriptionomics.R). 
 Voor het mappen van de reads is gebruik gemaakt van Rsubread versie xxxxx[(Liao et al, 2019)](bronnen/Yang_Liao_2019.pdf). Het Rsubread package zoekt de locatie van bepaalde sequenties van het gesequencete DNA op het volledige genoom van de mens, [GRCh38.p14](https://ftp.ensembl.org/pub/release-114/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.toplevel.fa.gz), en maakt hiermee een bam file. Deze bam [files](data/bambambai/) worden in een countmatrix gezet. 
 Na het mappen van de samples zijn de gemapte samples genormaliseert met DEseq2 versie xxxxxx [(Love et al, 2014)](bronnen/Micheal_I_love_2014.pdf). De data wordt genormaliseert om rekening te houden met de sequencing depth en kan door deze normalisering de expressie beter vergelijken tussen samples.
-Na het normaliseren van de samples kan de data worden gevisualiseert met de package EnhancedVolcano[(hier een referentie](metlink.pdf). Met deze package kan een grafiek worden gemaakt die de differentiele expressie van de samples weergeeft.
+Na het normaliseren van de samples kan de data worden gevisualiseert met de package EnhancedVolcano[(hier een referentie)](metlink.pdf). Met deze package kan een grafiek worden gemaakt die de differentiele expressie van de samples weergeeft.
 Verder zijn de samples geanalyseert met goseq om een Go enrichment uit te voeren, Voor deze analyse wordt gebruik gemaakt van het menselijke HG38 genoom. De goenrichment laat genen zien in een grafiek die een verhoogde expressie hebben in de patienten samples.
-Om de pathway analyse te doen is gebruik gemaakt van de KEGGREST[(hier een referentie](wow.pdf) package, Deze package mapt de gesequencete DNA op bekende pathways om te kijken welke pathways mogelijk betrokken zijn bij reumatoide artritis.
+Om de pathway analyse te doen is gebruik gemaakt van de KEGGREST[(hier een referentie)](wow.pdf) package, Deze package mapt de gesequencete DNA op bekende pathways om te kijken welke pathways mogelijk betrokken zijn bij reumatoide artritis.
 
 
 
@@ -65,11 +65,7 @@ Figuur 4 en 5 geven de 10 hoogste upregulated en downregulated pathways aan in d
 *Figuur 5: Pathway analyse van de down regulated pathways, de x-as geeft de significantie van de pathways in -log10 aan.*
 
 
-
-
-
-
 ## Conclusie
 
-Spreuken met meer accuraatheid lijken minder krachtig te zijn. Een uitzondering op deze trend is de onvergeeflijke vloek *Avada Kedavra*, welke beter niet gebruikt kan worden. 
+
 
