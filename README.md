@@ -11,7 +11,7 @@ klas: BM2C
 - `figuren/` - grafieken en tabellen
 - `bronnen/` - gebruikte bronnen 
 - `README.md` - het verslag
-- `Data_stewardshi` - De files gerelateerd aan de competenties
+- `datastewardship/` - De files gerelateerd aan de competenties
 
 ---
 
