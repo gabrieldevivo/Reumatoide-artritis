@@ -75,6 +75,9 @@ Figuur 4 en 5 geven de 10 hoogste upregulated en downregulated pathways aan in d
 ## Conclusie
 Om afwijkende expressie van genen en pathways te vinden in patienten met reumatoide artritis is een data analyse uitgevoerd in R. 
 
-De Enhancedvolcano plot laat zien dat er veel genen significant verschillende tot expressie komt in de patienten samples, het ANKRD30BL gen is  
+De Enhancedvolcano [plot](figuren/volcano%20plot.png") laat zien dat er veel genen significant verschillende tot expressie komt in de patienten samples, Bij de genen die tot overexpressie komen in de data was van interesse het gen [SRN](bronnen/genreference.csv), een gen dat codeert voor een eiwit in immuuncellen met een bijbehorende receptor. [IGHV1-69](bronnen/genreference.csv) is een gen dat ook in overexpressie is gemeten, dit gen codeert voor een imunoglobuline complex, waarvan het product kan vervormen tot een reumatoide factor. Deze genen die tot overexpressie hebben te maken met het auto-immuun respons van reumatoide artritis. 
+De [Goenrichment](figuren/Goenrichment.png) laat zien dat de meest significante overexpressie in het sample "protein binding" is, deze Gene Onthology heeft te maken met anti lichamen en komt mogelijk tot overexpressie door de auto immuniteit in de ziekte.
+De pathway analyse voor de [up](figuren/upregpathway.png) en [downregulated](figuren/downregpathway.png) pathways laat zien dat de immuun respons gerelateerde pathways adaptive immune response en immunoglobuline productie significant tot overexpressie komen.
+In conclusie lijkt het er op dat de meest significante genen en pathways die tot overexpressie komen in de samples betrokken zijn in de immuun response van het lichaam. Maar het is niet mogelijk om de conclusie te trekken dat deze overexpressie specifiek is voor reumatoide artritis, omdat deze genen en pathways wijzen op een algemeen immuun respons en niet een auto immuun reactie.
 
 
