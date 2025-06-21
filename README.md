@@ -44,7 +44,9 @@ De data is verwerkt met Rsubread om een [countmatrix](data/count_matrix.txt) te 
 
 *Figuur 2: enhanced volcano plot met p-cutoff, de x-as geeft de foldchange aan en de punten die op be y-as boven 5 liggen zijn significant, aangegeven met een rode kleur. de grijs gekleurde bolletjes verschillen niet significant van de patienten.*
 
-Na het maken van de [countmatrix](data/count_matrix.txt) wordt de data vergeleken met elkaar. Dit is te zien in figuur 2 waar een volcano plot is weergegeven, in deze grafiek is te zien dat verscheidenen genen significant up of down regulated zijn. een opvallend voorbeeld hiervan is het ANKRD30BL, dit gen is erg significant downregulated in patienten. De volcano plot bevat 2085 significant upregulated genen en 2487 significant downregulated genen.
+Na het maken van de [countmatrix](data/count_matrix.txt) wordt de data vergeleken met elkaar. Dit is te zien in figuur 2 waar een volcano plot is weergegeven, in deze grafiek is te zien dat verscheidenen genen significant up of down regulated zijn. een opvallend voorbeeld hiervan is het ANKRD30BL, dit gen is erg significant downregulated in patienten. De volcano plot bevat 2085 significant upregulated genen en 2487 significant downregulated genen. 
+
+Er is literatuur onderzoek uitgevoerd voor de functie van een paar van deze significante verschillende genen, te vinden in deze [tabel](bronnen/genreference.csv).
 
 <p align="center">
   <img src="figuren/Goenrichment.png" alt="Figuur 3: GOenrichment" width="600"/>
@@ -68,7 +70,7 @@ Figuur 4 en 5 geven de 10 hoogste upregulated en downregulated pathways aan in d
 
 *Figuur 5: Pathway analyse van de down regulated pathways, de x-as geeft de significantie van de pathways in -log10 aan.*
 
-Die ene tabel met genen+ referentie
+
 
 ## Conclusie
 Om afwijkende expressie van genen en pathways te vinden in patienten met reumatoide artritis is een data analyse uitgevoerd in R. 
