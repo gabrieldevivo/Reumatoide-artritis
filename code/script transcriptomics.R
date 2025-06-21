@@ -5,11 +5,18 @@
 
 setwd("C:/Users/gabri/Downloads/Data_RA_raw/Data_RA_raw")
 
+install.packages('BiocManager')
+
+BiocManager::install('Rsubread')
+library(Rsubread)
+
+
 buildindex(
   basename = 'ref_human',
   reference = 'GCF_000001405.40_GRCh38.p14_genomic.fna',
   memory = 8000,
   indexSplit = TRUE)
+
 align.patient1 <- align(index = "ref_human", readfile1 = "SRR4785980_1_subset40k.fasta", readfile2 = "SRR4785980_2_subset40k.fasta", output_file = "patient1.BAM")
 align.patient1 <- align(index = "ref_human", readfile1 = "SRR4785980_1_subset40k.fasta.gz", readfile2 = "SRR4785980_2_subset40k.fasta.gz", output_file = "patient1.BAM")
 align.patient1 <- align(index = "ref_human", readfile1 = "SRR4785980_1_subset40k.fna", readfile2 = "SRR4785980_2_subset40k.fna", output_file = "patient1.BAM")
