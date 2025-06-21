@@ -26,7 +26,7 @@ Voor het mappen van de reads is gebruik gemaakt van Rsubread versie 2.22.1 [(Lia
 Na het mappen van de samples zijn de gemapte samples genormaliseert met DEseq2 versie 1.48.1 [(Love et al, 2014)](bronnen/Micheal_I_love_2014.pdf). De data wordt genormaliseert om rekening te houden met de sequencing depth en kan door deze normalisering de expressie beter vergelijken tussen samples.
 Na het normaliseren van de samples kan de data worden gevisualiseert met de package EnhancedVolcano versie 1.26.0 [(Blighe et al, 2025)](https://bioconductor.org/packages/devel/bioc/vignettes/EnhancedVolcano/inst/doc/EnhancedVolcano.html). Met deze package kan een grafiek worden gemaakt die de differentiele expressie van de samples weergeeft.
 Verder zijn de samples geanalyseert met goseq om een Go enrichment uit te voeren, Voor deze analyse wordt gebruik gemaakt van het menselijke HG38 genoom. De goenrichment laat genen zien in een grafiek die een verhoogde expressie hebben in de patienten samples.
-Om de pathway analyse te doen is gebruik gemaakt van de KEGGREST versie 1.48.0[(Tenenbaum et al, 2021)](bronnen/KEGGREST.pdf) package, Deze package mapt de gesequencete DNA op bekende pathways om te kijken welke pathways mogelijk betrokken zijn bij reumatoide artritis.
+Om de pathway analyse te doen is gebruik gemaakt van KEGGREST versie 1.48.0[(Tenenbaum et al, 2021)](bronnen/KEGGREST.pdf) package, Deze package mapt de gesequencete DNA op bekende pathways om te kijken welke pathways mogelijk betrokken zijn bij reumatoide artritis.
 
 <p align="center">
   <img src="figuren/Screenshot%202025-06-21%20013352.png" alt="Figuur 1: flowchart" width="600"/>
